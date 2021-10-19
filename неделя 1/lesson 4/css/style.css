@@ -1,0 +1,152 @@
+/*  displey: block, inline, inline-block */
+
+/* p {
+    background-color: red; 
+    display: inline-block;
+    width: 300px;
+}
+span {
+    background-color: royalblue;
+    display: block;
+    width: 300px;
+} */
+
+/* псевдоклассы */
+
+span:first-child {
+    color: royalblue;
+}
+
+span:last-child {
+    color: salmon;
+}
+
+span:nth-child(2) {
+    color: seagreen;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* Пщсещенные ссылки */
+
+a:visited {
+    color: pink;
+}
+
+/*  Непосещенные ссылки */
+
+a:link {
+    color: orange;
+}
+
+a {
+    transition: all 1s;
+}
+
+/* при наведении */
+
+a:hover {
+    background-color: rosybrown;
+    font-size: 32px;
+}
+
+/* активные ссылки */
+
+a:active {
+    color: black;
+}
+
+/* Строчным тегам не работает */
+
+span::first-letter {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* первая буква текста */
+p::first-letter {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* первоя строка текста */
+p::first-line {
+    background: rgb(77, 77, 255);
+    font-style: italic;
+}
+
+
+/* чтобы работать с placeholder*/
+input::placeholder {
+    color: #000;
+    font-size: 20px;
+}
+
+/* Чтобы поставить контен тперед элементом */
+#span-1::before {
+    content: " ОЙ БОЙ" ;
+}
+/* чтобы поставить контент после элемента */
+#span-1::after {
+    content: "махатся будешь";
+    font-weight: 30px; 
+}
+
+#p-2::before {
+    content: "Poco x3";
+    color: chartreuse;
+}
+
+#p-2::after {
+    content:"продам не дорого";
+    font-size: 30px;
+}
+
+.main-block {
+    width: 100%;
+    background: crimson;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 100px;
+    background: darkblue;
+    position: fixed;
+    /* position: sticky; */
+    top: 0;
+    z-index: 2;
+}
+
+.first-div {
+    padding-top: 100px;
+}
+
+.content-block {
+    width: 100%;
+    height: 600px;
+    position: relative;
+
+}
+
+.footer {
+    width: 100%;
+    height: 650px;
+    background: red;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    background: #000;
+    position: absolute;
+    /* right: 0;
+    bottom: 0; */
+    /* left: 0;
+    top: 0; */
+    bottom: 10px;
+    left: 10px;
+    z-index: 1;
+
+}
